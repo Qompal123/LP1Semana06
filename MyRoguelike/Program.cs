@@ -9,18 +9,12 @@ namespace MyRoguelike
         {
             Level lvl = new Level(125, Toughness.Nightmare);
 
-            lvl.SetEnemyInRoom(0, new Enemy("Jumbo"));
-
-            lvl.SetEnemyInRoom(60, new Enemy("Loros"));
-
-            lvl.SetEnemyInRoom(41, new Enemy("Darth"));
-
-            lvl.SetEnemyInRoom(9, new Enemy("Zulom"));
-
-            lvl.SetEnemyInRoom(120, new Enemy("Vicious"));
-
-            lvl.SetEnemyInRoom(72, new Enemy("Mendium"));
-
+            lvl.SetEnemyInRoom(0, new Enemy("Urdnot Wrex"));
+            lvl.SetEnemyInRoom(120, new Enemy("Commander Shepard"));
+            lvl.SetEnemyInRoom(41, new Enemy("Liara T'Soni"));
+            lvl.SetEnemyInRoom(13, new Enemy("Tali'Zorah"));
+            lvl.SetEnemyInRoom(59, new Enemy("Garrus Vakarian"));
+            lvl.SetEnemyInRoom(99, new Enemy("Joker"));
 
             Console.WriteLine($"Toughness: {lvl.GetToughness()}");
 
@@ -28,22 +22,19 @@ namespace MyRoguelike
 
             Console.WriteLine($"Number of enemies: {lvl.GetNumEnemies()}");
 
-
             lvl.PrintEnemies();
 
-            /*
-            The screen will show:
-                Toughness: Nightmare
-                Number of rooms: 125
-                Number of enemies: 6
-                Zeroth room: Jumbo
-                Ninth room: Zulom
-                Forty-First room: Darth
-                Sixtieth room: Loros
-                Seventy-Second room: Mendium
-                Hundred and Twentieth room: Vicious
-            */
-
+            // Este programa mostra o seguinte no ecrã:
+            //
+            // Toughness: Nightmare
+            // Number of rooms: 125
+            // Number of enemies: 6
+            // Zeroth room: Urdnot Wrex
+            // Thirteenth room: Tali'Zorah
+            // Forty-First room: Liara T'Soni
+            // Fifty-Ninth room: Garrus Vakarian
+            // Ninety-Ninth room: Joker
+            // Hundred and Twentieth room: Commander Shepard
         }
     }
 
